@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import WeatherInfo from "./WeatherInfo"
 import "./Weather.css"; 
 export default function Weather() {
     const apiKey = "29583e5b03o3adtc2486edaf9f3af0e3";
@@ -18,7 +19,7 @@ export default function Weather() {
             humidity: response.data.temperature.humidity,
             wind: Math.round(response.data.wind.speed),
             precipitation: response.data.precipitation?.value || 0,
-
+            date: new Date(response.data.time*1000),    
         });
     }
 
@@ -46,7 +47,7 @@ export default function Weather() {
             </form>
             <h1>{weatherData.city}</h1>
             <ul>
-                <li>Wednesday</li>
+                <li><WeatherInfo date = {weatherData.date} /></li>
                 <li>{weatherData.description}</li>
             </ul>
             <div className="row">
