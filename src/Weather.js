@@ -3,6 +3,7 @@ import axios from "axios";
 
 import WeatherInfo from "./WeatherInfo";
 import "./Weather.css"; 
+import WeatherForecast from "./WeatherForecast";
 export default function Weather() {
     const apiKey = "29583e5b03o3adtc2486edaf9f3af0e3";
     const [city, setCity] = useState("");
@@ -47,7 +48,7 @@ export default function Weather() {
                 </div>
             </form>
             <WeatherInfo  data = {weatherData} />
-            
+            <WeatherForecast data = {weatherData} />
         </div>
     )
     } else {
