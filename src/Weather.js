@@ -16,6 +16,8 @@ export default function Weather() {
         setWeatherData({
             city: response.data.city,
             temperature: Math.round(response.data.temperature.current),
+            latitude: response.data.coordinates.latitude,
+            longitude: response.data.coordinates.longitude,
             description: response.data.condition.description,
             icon: response.data.condition.icon_url,
             humidity: response.data.temperature.humidity,
