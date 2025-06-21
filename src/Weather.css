@@ -23,6 +23,9 @@
     font-size: 64px;
     
 }
+.Weather canvas {
+    margin: 10px auto;
+}
 .Weather .unit {
     font-size: 16px;
     font-weight: 400;
