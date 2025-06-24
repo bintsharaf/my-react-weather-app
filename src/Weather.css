@@ -15,12 +15,12 @@
 .Weather img {
     vertical-align: top;
     height: 100%;
-    margin-right: 5px;
+    margin-right: 0;
     
 }
 .Weather .temperature {
     font-weight: 400;
-    font-size: 64px;
+    font-size:48px;
     
 }
 .Weather canvas {
