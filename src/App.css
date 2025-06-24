@@ -14,3 +14,10 @@
    margin: 10px 0;
    color: #100f1366;
 }
+
+@media (max-width: 760px) {
+    .App footer { 
+   font-size: 8px;
+   margin: 5px 0;
+    }
+}

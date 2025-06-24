@@ -20,7 +20,7 @@
     background: #f1f7fc;
     border: none;
     border-radius: 6px;
-    color: #223541;
+    color: #27214266;
     display: inline-block;
     font-size: 16px;
     height: 50px;
@@ -77,4 +77,45 @@
     font-size: 12px;
     line-height: 16px;
     font-weight: 100;
+}
+
+@media (max-width: 760px) {
+  .Weather {
+    padding: 20px 13px;  
+}
+    .Weather .logo {
+    max-width: 100px;
+}
+    .Weather form {
+    margin: 20px 0;
+  
+}
+    .Weather form .search-input {
+        line-height: 10px;
+        height: 0;
+        font-size: 12px;
+        padding: 20px 10px;
+    }
+    .Weather form .submit-btn {
+         font-size: 12px;
+         height: 40px;
+         padding:12px 0;
+}
+    .Weather h1 {
+        font-size: 20px;
+        margin: 0;
+    }
+    .Weather li {
+        font-size: 10px;
+    }
+    .Weather img {
+        max-width: 70px;
+    }
+    .Weather .temperature {
+        font-size: 36px;
+    }
+    .Weather .unit {
+        font-size: 15px;
+        top: -13px;
+    }
 }

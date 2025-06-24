@@ -12,3 +12,21 @@
     opacity: 0.6;
     margin-left: 5px;
 }
+
+@media (max-width: 760px) {
+    .WeatherForecast {
+        margin: 25px 0;
+    }
+    .WeatherForecast-Day {
+        font-size: 11px;
+    }
+    .WeatherForecast-icon img {
+    max-width: 40px;
+} 
+    .WeatherForecast-temperatures {
+        font-size: 11px;
+    }
+    .WeatherForecast-temperature-min {
+    margin-left: 1px;
+}
+}
