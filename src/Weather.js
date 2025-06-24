@@ -40,13 +40,16 @@ export default function Weather() {
     if (loaded) {
         return (
         <div className="Weather">
+            <a href="https://www.linkedin.com/in/fatimahsharafudeen/" target="_blank" rel=" noopener noreferrer">
+                <img src="/images/logo.png" className="logo" alt="qweencode logo"/>
+            </a>
             <form onSubmit={handleSubmit}>
                 <div className="row">
                     <div className="col-9">
-                        <input type="search" placeholder="Enter a City..." className="form-control" onChange={updateCity} autoFocus="on"/>
+                        <input type="search" placeholder="Enter a City..." className="form-control search-input" onChange={updateCity} autoFocus="on"/>
                     </div>
                     <div className="col-3">
-                        <input type="submit" value="Search" className="btn btn-primary w-100"/>
+                        <input type="submit" value="Search" className="btn submit-btn w-100"/>
                     </div>  
                 </div>
             </form>
